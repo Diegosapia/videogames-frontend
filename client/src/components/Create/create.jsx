@@ -15,6 +15,7 @@ const CreateVideogames = () => {
     const platforms = useSelector((state) => state.platforms)
     const genres = useSelector((state) => state.genres)
     ///
+    console.log("genres/create",genres)
 
     const navigate = useNavigate();
     ///
@@ -159,6 +160,7 @@ const CreateVideogames = () => {
                         </div>
                         <label htmlFor="genres" className={style.label}>Select your Genres: </label>
                         <div className={style.checkboxContainer}>
+                            
                             {genres?.map((genre) => (
                                 <label key={genre.name} className={style.genres}>
 

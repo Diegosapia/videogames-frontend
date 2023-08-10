@@ -17,7 +17,7 @@ import {
 
 export const getGames = () => {
   return async function (dispatch) {
-    const response = await axios.get("/videogames");
+    const response = await axios.get("https://videogames-backend-production.up.railway.app/videogames");
     return dispatch({ type: GET_VIDEOGAMES, payload: response.data });
   };
 };
@@ -28,7 +28,7 @@ export const onSearch = (nameState) => {
   return async function (dispatch) {
     try {
       const { data } = await axios.get(
-        `/videogames?name=${nameState}`
+        `https://videogames-backend-production.up.railway.app/videogames?name=${nameState}`
       );
       return dispatch({
         type: ON_SEARCH,
@@ -52,7 +52,7 @@ export const getGamesId = (id) => {
   return async (dispatch) => {
     try {
       const response = await axios.get(
-        `/videogames/${id}`
+        `https://videogames-backend-production.up.railway.app/videogames/${id}`
       );
       const videogame = response.data;
 
@@ -86,7 +86,7 @@ export const getGamesId = (id) => {
 export const getPlatforms = () => {
   return async function (dispatch) {
     try {
-      const response = await axios.get("/platforms");
+      const response = await axios.get("https://videogames-backend-production.up.railway.app/platforms");
       console.log("plataforms",response)
       const arrayObjetos = response.data.map((valor, indice) => {
         
@@ -111,7 +111,7 @@ export const cleanDetail = () => {
 export const getGenres = () => {
   return async function (dispatch) {
     try {
-      const response = await axios.get("/genres");
+      const response = await axios.get("https://videogames-backend-production.up.railway.app/genres");
       console.log("genres",response)
       return dispatch({
         type: GET_GENRES,
@@ -161,7 +161,7 @@ export function CreateVideogame(payload) {
   return async function (dispatch) {
     try {
       const response = await axios.post(
-        "/videogames",
+        "https://videogames-backend-production.up.railway.app/videogames",
         payload
       );
       

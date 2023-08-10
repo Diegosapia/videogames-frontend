@@ -12,7 +12,7 @@ const Home = () => {
     let allGenres = useSelector((state)=> state.genres);
     let filteredGames = useSelector((state)=> state.filtered);
     
-    console.log("allgenres/home",allGenres)
+  
   (filteredGames.length > 0) && (allVideogames = filteredGames)
     ///////////////   paginado //////////////
 //// declaro los estados locales para hacer el paginado correspondiente a la cantidad de videogames por pagina

@@ -87,6 +87,7 @@ export const getPlatforms = () => {
   return async function (dispatch) {
     try {
       const response = await axios.get("/platforms");
+      console.log("plataforms",response)
       const arrayObjetos = response.data.map((valor, indice) => {
         
         return { id: indice + 1, valor: valor };
@@ -111,6 +112,7 @@ export const getGenres = () => {
   return async function (dispatch) {
     try {
       const response = await axios.get("/genres");
+      console.log("genres",response)
       return dispatch({
         type: GET_GENRES,
         payload: response.data,

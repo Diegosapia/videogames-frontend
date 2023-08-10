@@ -90,7 +90,7 @@ const Home = () => {
                 </select>
                 <select className={style.selectInput}name="types" onChange={genresHandler}>
                     <option value="All">All Genres</option>
-                    {allGenres.map((genre) => (
+                    {allGenres?.map((genre) => (
                         <option value={genre.name} key={genre.name}>{genre.name}</option>
                         ))}
                 </select>

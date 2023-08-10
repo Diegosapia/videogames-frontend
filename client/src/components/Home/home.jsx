@@ -5,7 +5,7 @@ import style from './home.module.css';
 import Videogames from "../Videogames/videogames";
 import Paginado from "../Paginado/paginado";
 
-const Home = () => {
+const Home = async () => {
     /// declaro la constante dispatch para igualarla al hook useDispatch()
     const dispatch = useDispatch();
     let allVideogames = useSelector((state)=> state.videogames);
@@ -90,7 +90,7 @@ const Home = () => {
                 </select>
                 <select className={style.selectInput}name="types" onChange={genresHandler}>
                     <option value="All">All Genres</option>
-                    {allGenres.map((genre) => (
+                    {await allGenres.map((genre) => (
                         <option value={genre.name} key={genre.name}>{genre.name}</option>
                         ))}
                 </select>

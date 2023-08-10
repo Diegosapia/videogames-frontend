@@ -87,7 +87,7 @@ export const getPlatforms = () => {
   return async function (dispatch) {
     try {
       const response = await axios.get("/platforms");
-      const arrayObjetos = response.data.map((valor, indice) => {
+      const arrayObjetos = await response.data.map((valor, indice) => {
         
         return { id: indice + 1, valor: valor };
       });

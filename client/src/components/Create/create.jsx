@@ -159,7 +159,7 @@ const CreateVideogames = () => {
                         </div>
                         <label htmlFor="genres" className={style.label}>Select your Genres: </label>
                         <div className={style.checkboxContainer}>
-                            {genres.map((genre) => (
+                            {genres?.map((genre) => (
                                 <label key={genre.name} className={style.genres}>
 
                                     <input type="checkbox" name="genres" checked={form.genres.includes(genre.name)} value={genre.name} onChange={handleGenresChange} />  {genre.name} </label>))}
@@ -171,7 +171,7 @@ const CreateVideogames = () => {
                         <div className={style.titulo}>
                             <label htmlFor="platforms" className={style.label}>Select your Platforms </label>
                             <div className={style.checkboxContainer}>
-                                {platforms.map((p) => (
+                                {platforms?.map((p) => (
                                     <label key={p.valor} className={style.p}>
                                         <input type="checkbox" name="platforms" checked={form.platforms.includes(p.valor)} value={p.valor} onChange={handlePlatformChange} />  {p.valor} </label>))}
 

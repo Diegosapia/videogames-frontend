@@ -15,7 +15,7 @@ export default function LandingPage() {
                     <img src={gamezone} alt='landing' className={style.img} />
              
                     <Link to='/Home' >
-                        <button className={style.button}> Come In ! </button>
+                        <button className={style.button}> Come In! </button>
                     </Link>
                 </div>
                 </div>

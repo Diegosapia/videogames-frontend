@@ -5,7 +5,7 @@ import Detail from './components/Details/detail';
  import Create from './components/Create/create';
  import Nav from './components/Nav/nav';
 import axios from 'axios';
-axios.defaults.baseURL = "http://videogames-backend-production.up.railway.app/";
+axios.defaults.baseURL = "videogames-backend-production.up.railway.app/";
 
 function App() {
 

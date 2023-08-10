@@ -29,14 +29,7 @@ background-color: #312c2c;
    height: 100%;
   }
   
-  .title{
-    display: flex;
-    position: absolute;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-    padding: 0px 20px ;
-  }
+ 
   .button {
     position: absolute;
     top: 60%;

@@ -13,7 +13,7 @@ export default function LandingPage() {
                 <div className={style.imgbox}>
                 <div className={style.centro}>
                     <img src={gamezone} alt='landing' className={style.img} />
-                <h1 className={style.title} > Welcome to my VideoGames Store </h1>
+             
                     <Link to='/Home' >
                         <button className={style.button}> Come In ! </button>
                     </Link>

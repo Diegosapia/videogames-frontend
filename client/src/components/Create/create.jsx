@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import style from './create.module.css';
 import validations from './validations'
 import { Link } from 'react-router-dom';
-const CreateVideogames = async () => {
+const CreateVideogames = () => {
 
     const dispatch = useDispatch()
 
@@ -159,7 +159,7 @@ const CreateVideogames = async () => {
                         </div>
                         <label htmlFor="genres" className={style.label}>Select your Genres: </label>
                         <div className={style.checkboxContainer}>
-                            {await genres.map((genre) => (
+                            {genres.map((genre) => (
                                 <label key={genre.name} className={style.genres}>
 
                                     <input type="checkbox" name="genres" checked={form.genres.includes(genre.name)} value={genre.name} onChange={handleGenresChange} />  {genre.name} </label>))}

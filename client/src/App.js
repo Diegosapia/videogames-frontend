@@ -16,7 +16,9 @@ function App() {
     // También puedes utilizar variables de estado de React
     // para cambiar el título dinámicamente
     // Ejemplo: document.title = `Mi Aplicación - ${miVariableDeEstado}`;
-  }, []);  const {pathname} = useLocation()
+  }, []); 
+ 
+ const {pathname} = useLocation()
 
 
 

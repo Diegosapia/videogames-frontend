@@ -1,5 +1,6 @@
 import Landing from './components/LandingPage/landing';
-import { Routes,Route, useLocation} from 'react-router-dom';
+import { Routes,Route, useLocation, } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import Home from '../src/components/Home/home';
 import Detail from './components/Details/detail';
  import Create from './components/Create/create';
@@ -8,8 +9,14 @@ import axios from 'axios';
 
 
 function App() {
+  useEffect(() => {
+    // Cambia el título de la página web
+    document.title = "VideoGame DS";
 
-  const {pathname} = useLocation()
+    // También puedes utilizar variables de estado de React
+    // para cambiar el título dinámicamente
+    // Ejemplo: document.title = `Mi Aplicación - ${miVariableDeEstado}`;
+  }, []);  const {pathname} = useLocation()
 
 
 

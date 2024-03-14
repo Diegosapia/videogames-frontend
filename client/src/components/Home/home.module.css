@@ -3,10 +3,12 @@
     display:flex;
     justify-content: center;
     padding: 10px;
-    background-color: #bd0fa894;
+   background-color: #8b157d94;
+   
 }
 .videogames {
     background-color: rgb(46, 35, 45);
+    height: 100vh;
 }
 .selectInput{
     border: 2px solid #8b157d94;
@@ -15,9 +17,35 @@
     background-color: blueviolet;
     color: white;
 }
-@media (min-with:350px) and (max-with:1024px) {
-    .App {
-        background-size: cover;
-        width: 100vw;
+
+@media (max-width: 767px) {
+   
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+   
+  }
+  
+  
+  @media (min-width: 1025px) {
+    .conteiner {
+        display:flex;
+        justify-content: center;
+        padding: 15px 0px 10px 0px;
+        font-size: 15px;
+        height: 30px;
     }
-}
+    .selectInput{
+        border: 2px solid #8b157d94;
+        font-size: 15px;
+        height: 30px;
+    }
+    .button{
+        background-color: blueviolet;
+        color: white;
+        font-size: 15px;
+        height: 30px;
+        font-weight: 600;
+    }
+  }
+  

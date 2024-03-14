@@ -5,10 +5,13 @@ import style from './landing.module.css';
 
 export default function LandingPage() {
     return (
-        <main className={style.all}>
-            <Link to='/Home' className={style.imgC}>
-                <div className={style.button}>  </div>
+        
+        <section className={style.section}>
+            <div className={style.conteiner}>
+            <Link to='/Home' className={style.imgC}> 
+            <p>click to enter</p>
             </Link>
-        </main>
+            </div>
+        </section>
     )
 };

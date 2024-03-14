@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
+
+import  React, { useEffect, useState } from "react";
 import {useDispatch , useSelector} from 'react-redux'
 import {getGames,getGenres,cleanDetail,filterOrigen,filterByGenres,filterGames,orderBy} from '../../redux/actions'
 import style from './home.module.css';
 import Videogames from "../Videogames/videogames";
 import Paginado from "../Paginado/paginado";
 
-const Home = () => {
+const Home = React.memo(() =>  {
     /// declaro la constante dispatch para igualarla al hook useDispatch()
     const dispatch = useDispatch();
     let allVideogames = useSelector((state)=> state.videogames);
@@ -70,7 +71,7 @@ const Home = () => {
     
     return (
         <div >
-        <div className={style.filters}>
+        <section className={style.filters}>
 {/* aca tengo las barras de selecs donde manejo el ordenamiento y filtros  */}
             <div className={style.conteiner} >
                 <select className={style.selectInput}onChange={origenHandler}>
@@ -96,7 +97,7 @@ const Home = () => {
                 </select>
                 <button className={style.button}onClick={() => window.location.reload()}>Reset</button>
             </div>
-        </div>
+        </section>
             <div className={style.videogames}>
                 {/* en esta parte estoy renderizando el componente videogames pasandole como parametro 'currentVideogames''
 que muestra los 15 videogames por pagina ya creados previamente en el estado local  */}
@@ -112,5 +113,5 @@ que muestra los 15 videogames por pagina ya creados previamente en el estado loc
            </div>
        
     )
-}
+})
 export default Home;

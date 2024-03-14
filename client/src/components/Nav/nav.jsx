@@ -9,18 +9,13 @@ const NavBar = () => {
 
     return (
         <div className={style.all}>
+        <nav className={style.conteiner}>
         <div className={style.createcb}>
             <Link to="/create" className={style.create}>
             <button className={style.bcreate}> -Create Videogame- </button>
           </Link>
+          <SearchBar />
         </div>
-        <nav className={style.conteiner}>
-           
-            <div className={style.searchBar}>
-                <SearchBar />
-            </div>
-
-
         </nav>
         </div>
     )

@@ -1,13 +1,49 @@
 .searchb{
+    width: 100px;
     background-color: blueviolet;
     color: white;
+    
 }
+
+.searchInput {
+ width:400px;
+}
+
 .error{
     color: red;
 }
-@media (min-with:350px) and (max-with:1024px) {
-    .App {
-        background-size: cover;
-        width: 100vw;
+@media (max-width: 767px) {
+    .searchb{
+        width: 100px;
+        background-color: blueviolet;
+        color: white;
     }
-}
+    
+    .searchInput {
+     width:200px;
+    }
+   
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+   
+  }
+  
+  
+  @media (min-width: 1025px) {
+    .searchb{
+        font-size: 15px;
+        font-weight: 600;
+        width: 100px;
+        height: 30px;
+        background-color: blueviolet;
+        color: white;
+    }
+    
+    .searchInput {
+     width:450px;
+     font-size: 15px;
+     height: 30px;
+    }
+  }
+  

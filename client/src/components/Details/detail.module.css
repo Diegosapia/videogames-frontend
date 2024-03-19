@@ -79,5 +79,30 @@
     color :#e712e3;
 }
 @media (min-with:767px)  {
-   
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: rgb(255, 254, 255);
+        width: 350px;
+        padding: 40px 5px 40px 5px;
+        border: 2px solid #000000;
+       
+    }
+    .img {
+        width: 200px;
+        border-radius: 15px;
+       
+    }
+    .genres{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .plataformas{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

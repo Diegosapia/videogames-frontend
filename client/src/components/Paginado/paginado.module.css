@@ -1,10 +1,11 @@
 .paginado {
  
-   background-color: #8b157d94;
+   
 }
 .paginado ul {
     list-style: none;
     text-align: center;
+    background-color: #ffa9f594;
     
 }
 .paginado ul li {

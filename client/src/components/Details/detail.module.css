@@ -1,4 +1,7 @@
 .all{
+    display: flex;
+    align-items: center;
+    height: 100dvh;
     background-color: #312c2c;
     
 }
@@ -9,7 +12,7 @@
     margin: auto;
     padding: 40px;
     border: 2px solid #e712e3;
-    box-shadow: 10px 10px 5px 0px #e712e3;
+   
 }
 .container h1{
     color: white;
@@ -17,14 +20,10 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 1.5px;
 }
-.imgconteinre{
-    border: 5px solid white;
-}
+
 .img {
     width: 50em;
     height: auto;
-    border: 3px #e712e3 solid;
-    box-shadow: 10px 10px 5px 0px #e712e3;
 }
 .name {
   text-align: center;
@@ -33,21 +32,27 @@
     position: flex;
     text-align: center;
 }
-.rating {
-    text-align: right;
-}
-.fecha {
-    text-align: right;
-}
+
 .genres{
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.plataformas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .bHome{
     font-size: 30px;
     color: #e712e3;
     display: flex;
     justify-content: center;
+  
 }
+
 .bhome{
     color: white;
     background-color: #e712e3;
@@ -55,9 +60,7 @@
     border-radius: 5px;
     box-shadow: 5px 5px 5px 0px #e712e3;
 }
-.bhome:hover {
-    box-shadow: 0 2px 30px #f804ef;
-  }
+
 
 .maps{
     font-size: 30px;
@@ -66,15 +69,12 @@
 
 .released {
     color :#e712e3;
-    justify-content: end;
+    
 }
 .rat{
     justify-content: end;
     color :#e712e3;
 }
-@media (min-with:350px) and (max-with:1024px) {
-    .App {
-        background-size: cover;
-        width: 100vw;
-    }
+@media (min-with:767px)  {
+   
 }

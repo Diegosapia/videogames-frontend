@@ -25,7 +25,7 @@ const Paginado = ({ videogamesPerPage, allVideogames, currentPage, pagina }) => 
         if (currentPage > pageNumbers.length) {
             handlePagina(1);
         }
-      }, [handlePagina,currentPage,  totalPages]);
+      }, [handlePagina,currentPage,  totalPages, pageNumbers.length]);
     
     return (
         <nav className={style.paginado}>

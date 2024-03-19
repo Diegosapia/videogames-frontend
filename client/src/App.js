@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <div>
-        {pathname !== "/" && !pathname.startsWith("/detail/") && <Nav />}
+      {pathname === '/Home' ? <Nav /> : null}
       </div>
       <Routes>
         <Route path="/" element={<Landing />} />

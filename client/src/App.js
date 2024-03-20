@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <div>
-      {pathname === '/Home' ? <Nav /> : null}
+      {pathname === '/home' ? <Nav /> : null}
       </div>
       <Routes>
         <Route path="/" element={<Landing />} />

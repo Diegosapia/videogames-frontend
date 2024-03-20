@@ -15,10 +15,7 @@
 .card:hover {
     box-shadow: 0 2px 30px #f804ef;
   }
-  .border {
-    border: 1px solid #f804ef;
-    
-  }
+  
   .img {
     width: 100%;
     height: 300px;

@@ -128,7 +128,7 @@ const CreateVideogames = () => {
             <div className={style.all}>
                 <form onSubmit={handleSubmit} className={style.formContainer}>
                     <div className={style.contenedor}>
-                        <Link to="/home" className={style.homet}><button className={style.homeb}> - GO BACK HOME - </button> </Link>
+                        <Link to="/Home" className={style.homet}><button className={style.homeb}> - GO BACK HOME - </button> </Link>
                         <div className={style.img}>
                             <img src="https://images.immediate.co.uk/production/volatile/sites/4/2022/05/Retro-games-consoles-a977a72.jpg?quality=90&webp=true&crop=4px,143px,1193px,513px&resize=940,400" className={style.img} alt=""></img>
                         </div>
@@ -188,7 +188,7 @@ const CreateVideogames = () => {
                             </div>
                         </div>
                         <button className={style.submitButton} disabled={Object.keys(error).length > 0} type="submit">Create Videogame</button>
-                        <Link to="/home" className={style.home}><button className={style.homeb}> - GO BACK HOME - </button> </Link>
+                        <Link to="/Home" className={style.home}><button className={style.homeb}> - GO BACK HOME - </button> </Link>
                         
                     </div>
                 </form>

@@ -22,7 +22,7 @@ function GameDetail() {
     return (
         <section key={id} className={style.all}>
             <div className={style.container} >
-                <Link to={`/home`} className={style.bHome}><button className={style.bhome}>GO BACK TO HOME</button></Link>
+                <Link to={`/Home`} className={style.bHome}><button className={style.bhome}>GO BACK TO HOME</button></Link>
                 <img src={videosD.background_image} className={style.img} alt='Imagen descrictiva' />
                 <div className={style.name} >
                     <h1>{videosD.name}</h1>
@@ -52,7 +52,7 @@ function GameDetail() {
                     </ul>
                     <h3> <span className={style.released}> Released:</span> {videosD.released}</h3>
                 </div>
-                <Link to={`/home`} className={style.bHome}><button className={style.bhome}>GO BACK TO HOME</button></Link>
+                <Link to={`/Home`} className={style.bHome}><button className={style.bhome}>GO BACK TO HOME</button></Link>
             </div>
         </section>
     )
